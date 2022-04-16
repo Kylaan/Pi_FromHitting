@@ -13,7 +13,7 @@ int getHitCounts(long long k)
 	//first hit
 	cnt++;
  
-	float v2, u2;
+	double v2, u2;
 	while (1)
 	{
 		if (v1 < 0)
