@@ -5,11 +5,11 @@ using namespace std;
 int getHitCounts(long long k) 
 {
 	int cnt = 0;
-	float v0 = 0;
-	float u0 = -1000;
+	double v0 = 0;
+	double u0 = -1000;
  
-	float u1 = (k-1)*u0 / (k+1);
-	float v1 = k * (u0-u1);
+	double u1 = (k-1)*u0 / (k+1);
+	double v1 = k * (u0-u1);
 	//first hit
 	cnt++;
  
