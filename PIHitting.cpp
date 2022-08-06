@@ -1,12 +1,13 @@
 #include <iostream>
 #include <cmath>
+#include <windows.h>
 using namespace std;
 
 int getHitCounts(long long k) 
 {
 	int cnt = 0;
 	double v0 = 0;
-	double u0 = -1000;
+	double u0 = -1;
  
 	double u1 = (k-1)*u0 / (k+1);
 	double v1 = k * (u0-u1);
@@ -33,13 +34,14 @@ int getHitCounts(long long k)
 	return cnt;
 }
 int main() {
-    for (int i = 0; i < 30; i++)
+    for (int i = 0; i < 9; i++)
     {
-        long long x = pow(10, i);
-        cout << x << ":\n"
+        long long x = pow(10, 2*i);
+        cout << "10^n," << "n=" <<2*i<< ":\n"
              << getHitCounts(x) << endl;
     }
-    
+    cout << "\n long long精度所限，最大到10^16" << endl; 
+
     return 0;
 
 }
