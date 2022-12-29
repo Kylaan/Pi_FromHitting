@@ -1,9 +1,9 @@
 #include <iostream>
 #include <cmath>
 
-int getHitCounts(long long k) 
+long long getHitCounts(double k) 
 {
-	int cnt = 0;
+	long long cnt = 0;
 	double v0 = 0;
 	double u0 = -1;
  
@@ -31,14 +31,14 @@ int getHitCounts(long long k)
  
 	return cnt;
 }
+
 int main() {
-    for (int i = 0; i < 9; i++)
+    for (int i = 0; i <= 9; i++)
     {
-        long long x = pow(10, 2*i);
+        double x = pow(10, 2*i);
         std::cout << "10^n," << "n=" <<2*i<< ":\n"
              << getHitCounts(x) << std::endl;
     }
-    std::cout << "\n long long精度所限，最大到10^16" << std::endl; 
 
     return 0;
 
