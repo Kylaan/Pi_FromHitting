@@ -1,7 +1,5 @@
 #include <iostream>
 #include <cmath>
-#include <windows.h>
-using namespace std;
 
 int getHitCounts(long long k) 
 {
@@ -37,10 +35,10 @@ int main() {
     for (int i = 0; i < 9; i++)
     {
         long long x = pow(10, 2*i);
-        cout << "10^n," << "n=" <<2*i<< ":\n"
-             << getHitCounts(x) << endl;
+        std::cout << "10^n," << "n=" <<2*i<< ":\n"
+             << getHitCounts(x) << std::endl;
     }
-    cout << "\n long long精度所限，最大到10^16" << endl; 
+    std::cout << "\n long long精度所限，最大到10^16" << std::endl; 
 
     return 0;
 
