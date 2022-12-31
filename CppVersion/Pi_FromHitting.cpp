@@ -36,8 +36,8 @@ int main() {
     double x = 1;
     for (int i = 0; i < 9; i++)
     {
-        x *= 1e2;
         printf("10^%d:\n%lld\n", 2*i, getHitCounts(x));
+        x *= 1e2;
     }
 
     return 0;
