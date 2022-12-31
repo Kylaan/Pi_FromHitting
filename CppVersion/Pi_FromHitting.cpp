@@ -1,11 +1,9 @@
 #include <iostream>
 #include <cmath>
-#include <windows.h>
-using namespace std;
 
-int getHitCounts(long long k) 
+long long getHitCounts(double k) 
 {
-	int cnt = 0;
+	long long cnt = 0;
 	double v0 = 0;
 	double u0 = -1;
  
@@ -33,14 +31,14 @@ int getHitCounts(long long k)
  
 	return cnt;
 }
+
 int main() {
+    double x = 1;
     for (int i = 0; i < 9; i++)
     {
-        long long x = pow(10, 2*i);
-        cout << "10^n," << "n=" <<2*i<< ":\n"
-             << getHitCounts(x) << endl;
+        printf("\x1b[90m[M:m=10^%d]\x1b[0m: %lld\n", 2*i, getHitCounts(x));
+        x *= 1e2;
     }
-    cout << "\n long long精度所限，最大到10^16" << endl; 
 
     return 0;
 

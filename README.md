@@ -3,9 +3,6 @@
 ![image](https://user-images.githubusercontent.com/95552335/161999280-6fd0d035-d474-47b1-862e-d5d2dcfecdd9.png)
 
 M = (10^n) m , v₀任意
-cpp因为数位限制只能到10^16
-
-py的可以但是跑得很慢
 
 算法大概能提升？（Maybe)
 

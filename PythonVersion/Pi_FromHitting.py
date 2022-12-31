@@ -25,5 +25,4 @@ def TimeCounter (k):
 
 for i in range(1,10):
     x = 10**(2*i)
-    print( "10^n , n=" , 2*i , ':')
-    print(TimeCounter(x))
+    print(f"\x1b[90m[M:m=10^{2*i}]\x1b[0m: {TimeCounter(x)}")
