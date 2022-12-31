@@ -36,7 +36,7 @@ int main() {
     double x = 1;
     for (int i = 0; i < 9; i++)
     {
-        printf("10^%d:\n%lld\n", 2*i, getHitCounts(x));
+        printf("\x1b[90m[M:m=10^%d]\x1b[0m: %lld\n", 2*i, getHitCounts(x));
         x *= 1e2;
     }
 
