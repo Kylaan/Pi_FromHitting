@@ -33,11 +33,11 @@ long long getHitCounts(double k)
 }
 
 int main() {
-    for (int i = 0; i <= 9; i++)
+    double x = 1;
+    for (int i = 0; i < 9; i++)
     {
-        double x = pow(10, 2*i);
-        std::cout << "10^n," << "n=" <<2*i<< ":\n"
-             << getHitCounts(x) << std::endl;
+        x *= 1e2;
+        printf("10^%d:\n%lld\n", 2*i, getHitCounts(x));
     }
 
     return 0;
